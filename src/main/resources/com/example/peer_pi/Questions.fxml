@@ -197,7 +197,7 @@
       <MFXLegacyListView layoutX="600.0" layoutY="139.0" prefHeight="472.0" prefWidth="394.0" style="-fx-background-radius: 10; -fx-background-color: #1E2633;" />
       <Group layoutX="620.0" layoutY="165.0">
          <children>
-            <MFXButton alignment="TOP_LEFT" prefHeight="66.0" prefWidth="353.0" style="-fx-border-radius: 10; -fx-background-color: #273041;" text="Biology" textFill="WHITE">
+            <MFXButton alignment="TOP_LEFT" onAction="#switchToBioNotes" prefHeight="66.0" prefWidth="353.0" style="-fx-border-radius: 10; -fx-background-color: #273041;" text="Biology" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="31.0" />
                </font>

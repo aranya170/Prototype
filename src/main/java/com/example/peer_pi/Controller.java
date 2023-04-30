@@ -13,23 +13,6 @@ import java.io.IOException;
 
 public class Controller {
     @FXML
-    private MFXButton LogInBtn;
-    @FXML
-    private MFXButton createBtn;
-    @FXML
-    private MFXTextField mailBtn;
-    @FXML
-    private MFXTextField passBtn;
-    @FXML
-    private MFXProgressBar progress1;
-    @FXML
-    private MFXIconWrapper icon;
-    @FXML
-    private MFXTitledPane title;
-    @FXML
-    private MFXLegacyListView<?> box;
-
-    @FXML
     protected void switchToDash(ActionEvent event) throws IOException, InterruptedException {
         Parent scene2 = FXMLLoader.load(getClass().getResource("Dash.fxml"));
         Scene displayScene = new Scene(scene2);
@@ -64,6 +47,14 @@ public class Controller {
     @FXML
     protected void switchToWeb(ActionEvent event) throws IOException {
         Parent scene2 = FXMLLoader.load(getClass().getResource("DiscordPageOOP.fxml"));
+        Scene displayScene = new Scene(scene2);
+        Stage window = (Stage)((Node)(event.getSource())).getScene().getWindow();
+        window.setScene(displayScene);
+        window.show();
+    }
+    @FXML
+    protected void switchToBioNotes(ActionEvent event) throws IOException {
+        Parent scene2 = FXMLLoader.load(getClass().getResource("NotesBiology.fxml"));
         Scene displayScene = new Scene(scene2);
         Stage window = (Stage)((Node)(event.getSource())).getScene().getWindow();
         window.setScene(displayScene);

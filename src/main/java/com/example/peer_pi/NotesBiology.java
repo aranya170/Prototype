@@ -1,11 +1,10 @@
 package com.example.peer_pi;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-public class WebController extends Controller{
+public class NotesBiology extends Controller{
     @FXML
     private WebView web;
     public void initialize(){
